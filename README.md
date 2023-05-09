@@ -9,8 +9,9 @@ This is a notebook that uses the standard MNIST example, a network that can reco
 Create your conda environment as follows:
 
 ```
-conda install tensorflow=2.9 python matplotlib ipykernel
+conda create -n tensorflow
 source activate tensorflow
+conda install tensorflow=2.9 python matplotlib ipykernel
 python -m ipykernel install  --prefix=${VSC_HOME}/.local/ --name 'tensorflow'
 ```
 It is important to not use Tensorflow <= 2.9, as some functionality has changed after this version.
@@ -26,7 +27,8 @@ the (pretty sad) scores of Belgium over the years. If you have any inspiration f
 Create your conda env as follows:
 
 ```
-conda create -n r_envsource activate r_env
+conda create -n r_env
+source activate r_env
 conda install -c conda-forge r-base r-data.table r-ggplot2 jupyter_client r-irkernel
 Rscript -e 'IRkernel::installspec(prefix="${VSC_HOME}/.local/", name="r_env", 	displayname="r_env")’
 ```
@@ -34,5 +36,15 @@ The dataset is downloaded from Kaggle, but you need a login for that. Also, I ch
 copy it from my $VSC_DATA (it is located in '/data/leuven/342/vsc34271/ondemand_booth/datasets') to your own data folder.
 
 ## MaNGO notebook
+This is a notebook created by the RDM team. It contains general iRODS and MaNGO functions. Create your conda env and kernel as follows:
+
+```
+conda create -n irods
+conda install python pip ipykernel
+<your_miniconda_location>/envs/irods/bin/pip install python-irodsclient
+<your_miniconda_location>/envs/irods/bin/pip install ipython
+python -m ipykernel install  --prefix=${VSC_HOME}/.local/ --name 'irods'
+```
+
 
 
