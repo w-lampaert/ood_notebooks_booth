@@ -30,7 +30,7 @@ Create your conda env as follows:
 conda create -n r_env
 source activate r_env
 conda install -c conda-forge r-base r-data.table r-ggplot2 jupyter_client r-irkernel
-Rscript -e 'IRkernel::installspec(prefix="${VSC_HOME}/.local/", name="r_env", 	displayname="r_env")’
+Rscript -e 'IRkernel::installspec(prefix="${VSC_HOME}/.local/", name="r_env", 	displayname="r_env")'
 ```
 The dataset is downloaded from Kaggle. It should be exported to csv first.
 
