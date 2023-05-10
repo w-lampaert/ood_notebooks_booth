@@ -32,8 +32,7 @@ source activate r_env
 conda install -c conda-forge r-base r-data.table r-ggplot2 jupyter_client r-irkernel
 Rscript -e 'IRkernel::installspec(prefix="${VSC_HOME}/.local/", name="r_env", 	displayname="r_env")’
 ```
-The dataset is downloaded from Kaggle, but you need a login for that. Also, I changed some minor things before reading it into R, so it would be better to just 
-copy it from my $VSC_DATA (it is located in '/data/leuven/342/vsc34271/ondemand_booth/datasets') to your own data folder.
+The dataset is downloaded from Kaggle. It should be exported to csv first.
 
 ## MaNGO notebook
 This is a notebook created by the RDM team. It contains general iRODS and MaNGO functions. Create your conda env and kernel as follows:
