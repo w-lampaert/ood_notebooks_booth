@@ -11,7 +11,7 @@ Create your conda environment as follows:
 ```
 conda create -n tensorflow
 source activate tensorflow
-conda install tensorflow=2.9 python matplotlib ipykernel
+conda install tensorflow=2.9 python matplotlib datetime ipykernel
 python -m ipykernel install  --prefix=${VSC_HOME}/.local/ --name 'tensorflow'
 ```
 It is important to not use Tensorflow <= 2.9, as some functionality has changed after this version.
